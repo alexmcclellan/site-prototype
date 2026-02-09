@@ -22,36 +22,32 @@
       color: #1e90ff;
       margin-bottom: 10px;
     }
-    ul { list-style-type: none; padding-left: 0; }
-    li { margin-bottom: 10px; }
-    a { color: #1e90ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .section { margin-bottom: 30px; }
-    hr { border: 0; height: 1px; background: #333; margin: 20px 0; }
-
-    /* Contact form */
-    form {
-      max-width: 500px;
+    ul {
+      list-style-type: none;
+      padding-left: 0;
     }
-    input, textarea, button {
-      width: 100%;
-      padding: 10px;
+    li {
       margin-bottom: 10px;
-      border-radius: 5px;
-      border: none;
-      font-size: 1rem;
     }
-    input, textarea {
-      background-color: #1e1e1e;
-      color: #e0e0e0;
+    a {
+      color: #1e90ff;
+      text-decoration: none;
     }
-    button {
-      background-color: #1e90ff;
-      color: #fff;
-      cursor: pointer;
+    a:hover {
+      text-decoration: underline;
     }
-    button:hover {
-      background-color: #187bcd;
+    .section {
+      margin-bottom: 30px;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background: #333;
+      margin: 20px 0;
+    }
+    .note {
+      font-style: italic;
+      color: #b0b0b0;
     }
   </style>
 </head>
@@ -65,70 +61,8 @@
       <a href="https://linkedin.com/in/alexandermcclellan/" target="_blank">
         linkedin.com/in/alexandermcclellan
       </a>
-      <br>
-      Email:
-      <span id="email"></span>
     </p>
+    <p class="note">Email available on resume or via LinkedIn.</p>
 
     <div class="section">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>B.S. Cybersecurity & Information Assurance</strong>, Western Governors University, September 2025</li>
-        <li><strong>B.S. Psychology</strong>, Utah Valley University, December 2023</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>CompTIA Security+, CySA+, PenTest+, A+, Network+, Project+, IT Operations Specialist, Secure Infrastructure Specialist</li>
-        <li>(ISC)² SSCP, Microsoft Certified: Azure Fundamentals, ITIL Foundation, LPI Linux Essentials</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Skills & Training</h2>
-      <ul>
-        <li><strong>Operating Systems:</strong> Windows 10/11, Windows Server, Linux, macOS</li>
-        <li><strong>Security Tools:</strong> Microsoft Defender, Sentinel, Splunk, Nessus, Wireshark</li>
-        <li><strong>Scripting:</strong> Python, PowerShell, CLI</li>
-        <li><strong>Networking:</strong> Active Directory, DNS, DHCP, SIEM, Vulnerability Scanning</li>
-        <li><strong>Cloud:</strong> Microsoft Azure, Google Workspace, Microsoft 365</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Experience</h2>
-
-      <h3>IT Specialist – 1Wire Fiber (May 2025 – Present)</h3>
-      <ul>
-        <li>Designed and implemented cybersecurity and IT infrastructure solutions for SMB clients.</li>
-        <li>Provided onsite and remote support for Windows/macOS systems, servers, firewalls, and VoIP.</li>
-        <li>Administered Microsoft 365, Google Workspace, and Active Directory environments.</li>
-      </ul>
-    </div>
-
-    <hr>
-
-    <div class="section">
-      <h2>Contact Me</h2>
-
-      <!-- Replace action URL with your Formspree or backend endpoint -->
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Email obfuscation -->
-  <script>
-    const user = "alex.mcclellan17";
-    const domain = "gmail.com";
-    document.getElementById("email").innerHTML =
-      `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
-  </script>
-</body>
-</html>
+      <h2>E
